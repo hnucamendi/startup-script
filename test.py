@@ -1,10 +1,11 @@
 import random
+import pywhatkit
 
 def createRands(counter, stop):
-  rand1 = random.randint(1,100)
-  rand2 = random.randint(1,100)
-  rand3 = random.randint(1,100)
-  rand4 = random.randint(1,100)
+  rand1 = random.randint(1,1000)
+  rand2 = random.randint(1,1000)
+  rand3 = random.randint(1,1000)
+  rand4 = random.randint(1,1000)
   if counter < stop:
     exit
   twoArrayAdder([rand1,rand2], [rand3,rand4],counter, stop)
@@ -18,7 +19,9 @@ def twoArrayAdder(arr1, arr2, counter, stop):
   sum1 = arraySum(arr1)
   sum2 = arraySum(arr2)
   if sum1 == sum2:
-    print(str(counter) + " Sucess took " + str(counter) + " tries")
+    print(str(counter) + " Success took " + str(counter) + " tries...Enjoy!")
+    pywhatkit.playonyt("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    pywhatkit.take_screenshot("Pranked")
     return
   while counter < stop:
     counter += 1
@@ -26,4 +29,5 @@ def twoArrayAdder(arr1, arr2, counter, stop):
     break
   exit
 
-createRands(0, 1000)
+createRands(0, 100)
+
