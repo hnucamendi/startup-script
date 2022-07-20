@@ -1,7 +1,7 @@
 import random
 import pywhatkit
 
-def createRands(counter, stop):
+def createRands(counter=1, stop=100):
   rand1 = random.randint(1,1000)
   rand2 = random.randint(1,1000)
   rand3 = random.randint(1,1000)
@@ -29,5 +29,5 @@ def twoArrayAdder(arr1, arr2, counter, stop):
     break
   exit
 
-createRands(0, 100)
+createRands()
 
