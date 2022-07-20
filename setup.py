@@ -1,11 +1,6 @@
 import random
 import pywhatkit
 
-## To run:
-# pip install pywhatkit || pip3 install pywhatkit
-# pip install random
-# Python must be installed
-
 def createRands(counter=1, stop=100):
   rand1 = random.randint(1,1000)
   rand2 = random.randint(1,1000)
