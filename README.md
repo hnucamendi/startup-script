@@ -1,5 +1,11 @@
 # Starup Rick Roll Randomizer
 
+Sometimes.. not always will you be Rick Rolled, but there is a chance that one day as you login to your computer you get caught lacking.
+
+Why would you want to put this in your startup file?
+Because its fun and the day that you get Rick Rolled you might have a lot of luck, or no luck.. so yea its just fun
+also good for pranks :O
+
 ## To run:
 
 - Python must be installed
