@@ -4,7 +4,7 @@ import rotatescreen
 import time
 import pyautogui
 
-def createRands(counter=1, stop=400):
+def createRands(counter=1, stop=100):
   rand1 = random.randint(1,1000)
   rand2 = random.randint(1,1000)
   rand3 = random.randint(1,1000)
