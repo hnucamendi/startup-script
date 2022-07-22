@@ -1,7 +1,10 @@
 import random
 import pywhatkit
+import rotatescreen
+import time
+import pyautogui
 
-def createRands(counter=1, stop=100):
+def createRands(counter=1, stop=400):
   rand1 = random.randint(1,1000)
   rand2 = random.randint(1,1000)
   rand3 = random.randint(1,1000)
@@ -22,6 +25,12 @@ def twoArrayAdder(arr1, arr2, counter, stop):
     print(str(counter) + " Success took " + str(counter) + " tries...Enjoy!")
     pywhatkit.playonyt("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     pywhatkit.take_screenshot("Pranked")
+    pyautogui.press('win')
+    pyautogui.write("cmd")
+    pyautogui.press('enter')
+    pyautogui.write("ipconfig",interval=0.05)
+    pyautogui.press('enter')
+    time.sleep(1)
     return
   while counter < stop:
     counter += 1
