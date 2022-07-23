@@ -8,8 +8,8 @@ def createRands(counter=1, stop=100):
   rand2 = random.randint(1,1000)
   rand3 = random.randint(1,1000)
   rand4 = random.randint(1,1000)
-  if counter < stop:
-    exit
+  if counter >= stop:
+    return
   twoArrayAdder([rand1,rand2], [rand3,rand4],counter, stop)
 
 def arraySum(arr):
@@ -35,7 +35,7 @@ def twoArrayAdder(arr1, arr2, counter, stop):
     counter += 1
     createRands(counter,stop)
     break
-  exit
+  return
 
 createRands()
 
