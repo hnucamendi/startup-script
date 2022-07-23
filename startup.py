@@ -1,6 +1,5 @@
 import random
 import pywhatkit
-import rotatescreen
 import time
 import pyautogui
 
